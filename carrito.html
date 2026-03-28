@@ -1,61 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/carrito.css">
-    <link rel="stylesheet" href="css/footer.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito</title>
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/carrito.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
-    <header>
-        <img src="imgs/prueba-removebg-preview.png" alt="" class="logo">
-        <a href="index.html" class="seccion" title="Inicio">Inicio</a>
-        <a href="shop.html" class="seccion" title="Tienda">Tienda</a>
-        <a href="contacto.html" class="seccion" title="Contacto">Contacto</a>
-        <div>
-            <a href="cuenta.html" title="Cuenta">
-            <img src="" alt="">
-            red 1
-        </a>
-        <a href="carrito.html">
-            <img src="" alt="">
-            des
-        </a>
-        </div>
-        
-    </header>
-    <main>
-    <div class="page-wrapper">
-      <h1 class="section-title" style="font-size:0.9rem; margin-bottom:1.4rem;">Carrito</h1>
+  <header>
+    <img src="imgs/logo.png" alt="Pixelito" class="logo">
+    <a href="index.html" class="seccion " title="Inicio">Inicio</a>
+    <a href="shop.html" class="seccion " title="Tienda">Tienda</a>
+    <a href="" class="seccion" title="Contacto">Contacto</a>
+    <div>
+      <a href="cuenta.html" title="cuenta">
+        <img src="imgs/user.png" alt="">
+      </a>
+      <a href="carrito.html" title="shop" class="active-icon">
+        <img src="imgs/shop.png" alt="">
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="page">
+      <h1 class="section-title">Carrito</h1>
 
       <div class="cart-layout">
-
-        <!-- TABLA DE PRODUCTOS -->
         <table class="cart-table">
           <thead>
             <tr>
               <th colspan="2">Producto</th>
               <th>Cantidad</th>
               <th>Precio</th>
-              <th></th>
+              <th>Eliminar</th>
             </tr>
           </thead>
           <tbody id="cart-body">
-            <!-- items rendered by JS -->
+            <tr>
+              <td>
+                <img class="cart-item-img" src="imgs/corazon_hamma.jpeg" alt="Llavero Pixel">
+              </td>
+              <td>
+                <div class="item-name">Llavero Pixel Corazon</div>
+                <div class="item-linea">Sku-01</div>
+              </td>
+              <td>
+                <div class="control">
+                  <button onclick="">−</button>
+                  <span>1</span>
+                  <button onclick="">+</button>
+                </div>
+              </td>
+              <td>$50.00</td>
+              <td><button class="remove-btn" onclick="">✕</button></td>
+            </tr>
+            <tr>
+              <td>
+                <img class="cart-item-img" src="imgs/minecraft.jpeg" alt="Llavero Pixel">
+              </td>
+              <td>
+                <div class="item-name">Llavero Pixel Steve</div>
+                <div class="item-linea">Sku-01</div>
+              </td>
+              <td>
+                <div class="control">
+                  <button onclick="">−</button>
+                  <span>1</span>
+                  <button onclick="">+</button>
+                </div>
+              </td>
+              <td>$70.00</td>
+              <td><button class="remove-btn" onclick="">✕</button></td>
+            </tr>
+            <tr>
+              <td>
+                <img class="cart-item-img" src="imgs/batman_hamma.jpeg" alt="Llavero Pixel">
+              </td>
+              <td>
+                <div class="item-name">Llavero Pixel Batman</div>
+                <div class="item-linea">Sku-01</div>
+              </td>
+              <td>
+                <div class="control">
+                  <button onclick="">−</button>
+                  <span>1</span>
+                  <button onclick="">+</button>
+                </div>
+              </td>
+              <td>$90.00</td>
+              <td><button class="remove-btn" onclick="">✕</button></td>
+            </tr>
+            <tr>
+              <td>
+                <img class="cart-item-img" src="imgs/mario_hamma.jpeg" alt="Llavero Pixel">
+              </td>
+              <td>
+                <div class="item-name">Llavero Pixel Mario</div>
+                <div class="item-linea">Sku-02</div>
+              </td>
+              <td>
+                <div class="control">
+                  <button onclick="">−</button>
+                  <span>1</span>
+                  <button onclick="">+</button>
+                </div>
+              </td>
+              <td>$80.00</td>
+              <td><button class="remove-btn" onclick="">✕</button></td>
+            </tr>
           </tbody>
         </table>
-
-        <!-- RESUMEN -->
-        <div class="summary-card">
+        <div class="resumen-card">
           <h3>Resumen</h3>
-          <div class="summary-body">
-            <div class="summary-row"><span>Subtotal</span><span id="subtotal">$40.00</span></div>
-            <div class="summary-row"><span>Envío</span><span>$0.00</span></div>
-            <div class="summary-row"><span>Descuento</span><span>—</span></div>
-            <div class="summary-total"><span>Total</span><span id="total">$40.00</span></div>
-            <a href="#" class="btn btn-primary btn-full" style="text-align:center; display:block;">Pagar</a>
+          <div class="resumen-body">
+            <div class="resumen-row">
+              <span>Subtotal</span>
+              <span id="subtotal">$290.00</span>
+            </div>
+            <div class="resumen-row">
+              <span>Envío</span>
+              <span>$20.00</span>
+            </div>
+            <div class="resumen-row">
+              <span>Descuento</span>
+              <span>—</span>
+            </div>
+            <div class="resumen-total">
+              <span>Total</span>
+              <span id="total">$310.00</span>
+            </div>
+            <a href="#" class="btn" >Pagar</a>
           </div>
         </div>
 
@@ -66,74 +145,26 @@
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="logo-placeholder">PX</div>
+        <img src="imgs/logo.png" class="logo-placeholder">PX</img>
         <span>Arte pixel a pixel</span>
       </div>
       <div class="footer-map">
         <h4>MAPA DE SITIO</h4>
         <a href="index.html">Inicio</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="shop.html">Tienda</a>
+        <a href="">Contacto</a>
       </div>
     </div>
     <div class="footer-bottom">
       <span>Todos los derechos reservados.</span>
       <div class="footer-bottom-links">
-        <a href="#">Aviso de privacidad</a>
+        <a href="#" class="aviso">Aviso de privacidad</a>
         <a href="#">Términos de uso</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    const items = [
-      { id: 1, name: 'Llavero Pixel', sku: 'SKU-001', price: 10, qty: 1,
-        img: 'https://images.unsplash.com/photo-1625805866449-3b62a1a3dbdd?w=200&auto=format&fit=crop' },
-      { id: 2, name: 'Figura Retro', sku: 'SKU-002', price: 10, qty: 1,
-        img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&auto=format&fit=crop' },
-      { id: 3, name: 'Kirby Set', sku: 'SKU-003', price: 10, qty: 1,
-        img: 'https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=200&auto=format&fit=crop' },
-      { id: 4, name: 'Pokéball', sku: 'SKU-004', price: 10, qty: 1,
-        img: 'https://images.unsplash.com/photo-1608731267464-c0c889c2ff92?w=200&auto=format&fit=crop' },
-    ];
-
-    function render() {
-      const tbody = document.getElementById('cart-body');
-      tbody.innerHTML = items.map(item => `
-        <tr>
-          <td><img class="cart-item-img" src="${item.img}" alt="${item.name}"/></td>
-          <td>
-            <div class="item-name">${item.name}</div>
-            <div class="item-sku">${item.sku}</div>
-          </td>
-          <td>
-            <div class="qty-ctrl">
-              <button onclick="changeQty(${item.id}, -1)">−</button>
-              <span>${item.qty}</span>
-              <button onclick="changeQty(${item.id}, 1)">+</button>
-            </div>
-          </td>
-          <td style="font-weight:700;">$${(item.price * item.qty).toFixed(2)}</td>
-          <td><button class="remove-btn" onclick="removeItem(${item.id})">✕</button></td>
-        </tr>
-      `).join('');
-
-      const total = items.reduce((s, i) => s + i.price * i.qty, 0);
-      document.getElementById('subtotal').textContent = `$${total.toFixed(2)}`;
-      document.getElementById('total').textContent = `$${total.toFixed(2)}`;
-    }
-
-    function changeQty(id, delta) {
-      const item = items.find(i => i.id === id);
-      if (item) { item.qty = Math.max(1, item.qty + delta); render(); }
-    }
-
-    function removeItem(id) {
-      const idx = items.findIndex(i => i.id === id);
-      if (idx > -1) { items.splice(idx, 1); render(); }
-    }
-
-    render();
-  </script>
+  
 </body>
+
 </html>

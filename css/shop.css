@@ -1,4 +1,111 @@
 * {
     margin: 0;
+    font-family: var(--jostBlack);
 }
 
+header > a:nth-child(2):hover {
+    background-color: var(--azul_oscuro);
+    color: var(--blanco);
+}
+
+header > a:nth-child(4):hover {
+    background-color: var(--azul_oscuro);
+    color: var(--blanco);
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.page { 
+    padding: 30px; 
+    display: inline-block;
+}
+
+.section-title {
+    font-size: 28px;
+    color: var(--negro);
+    font-family: var(--arcade);
+    font-weight: 500;
+}
+
+/* ── FILTERS ── */
+.filters {
+    display: flex;
+    justify-content: flex-start; /* flex-start */
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    padding: 0.45rem 1rem;
+    margin: 20px 15px 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: transparent;
+    font-family: var(--jostBold);
+    font-size: 16px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--negro);
+}
+
+.filter-btn.active-btn, .filter-btn:hover {
+    border-color: var(--azul_oscuro);
+    background: var(--azul_oscuro);
+    color: var(--blanco);
+}
+
+.products-row {
+    height: auto;
+    display: flex;
+    justify-content: center; /* flex-start */
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.product-card {
+    width: 200px;
+    height: 350px;
+    display: inline-block;
+    background: var(--verde_claro);
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #ffffff;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 20px 30px 30px 30px;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 10px 10px 20px 15px;
+    display: block;
+}
+
+.product-info h3 {
+    color: var(--azul_oscuro);
+    font-family: var(--jost);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.product-info .price {
+    font-size: 12px;
+    color: var(--gris);
+    font-weight: 200;
+}

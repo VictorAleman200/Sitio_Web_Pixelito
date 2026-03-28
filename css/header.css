@@ -92,3 +92,11 @@ div a[title="shop"] img {
     width: 40px;
     height: 40px;
 }
+
+div a[title="cuenta"].active-icon {
+    background-color: var(--verde_claro);
+}
+
+div a[title="shop"].active-icon {
+    background-color: var(--verde_claro);
+}

@@ -3,7 +3,15 @@
     src: url(../fonts/Jost-Black.ttf);
 }
 
+@font-face {
+    font-family: jostBold;
+    src: url(../fonts/Jost-Bold.ttf);
+}
 
+@font-face {
+    font-family: jostExtrabold;
+    src: url(../fonts/Jost-ExtraBold.ttf);
+}
 
 @font-face {
     font-family: arcade;
@@ -13,6 +21,7 @@
 :root {
     --azul_oscuro: #214053;
     --gris: #f3f2ed;
+    --gris_oscuro: #959491;
     --azul_claro: #84b0bb;
     --verde_claro: #9abf9f;
     --azul_medio: #48788c;
