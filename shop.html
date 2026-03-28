@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <img src="imgs/prueba-removebg-preview.png" alt="" class="logo">
+        <a href="index.html" class="seccion" title="Inicio">Inicio</a>
+        <a href="shop.html" class="seccion active" title="Tienda">Tienda</a>
+        <a href="contacto.html" class="seccion" title="Contacto">Contacto</a>
+        <div>
+            <a href="cuenta.html" title="Cuenta">
+            <img src="" alt="">
+            red 1
+        </a>
+        <a href="carrito.html">
+            <img src="" alt="">
+            des
+        </a>
+        </div>
+        
+    </header>
+    <main>
+    <div class="page-wrapper">
+      <h1 class="section-title" style="font-size:0.9rem; margin-bottom:1.2rem;">Tienda</h1>
+
+      <!-- FILTROS -->
+      <div class="filters">
+        <button class="filter-btn active">Todos</button>
+        <button class="filter-btn">Llaveros</button>
+        <button class="filter-btn">Figuras</button>
+        <button class="filter-btn">Pokémon</button>
+        <button class="filter-btn">Videojuegos</button>
+        <button class="filter-btn">Anime</button>
+        <button class="filter-btn">Personalizado</button>
+      </div>
+
+      <!-- CUADRÍCULA -->
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1625805866449-3b62a1a3dbdd?w=400&auto=format&fit=crop" alt="Producto 1"/>
+          <div class="product-info"><h3>Llavero Pixel</h3><span class="price">$10.00</span></div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop" alt="Producto 2"/>
+          <div class="product-info"><h3>Figura Retro</h3><span class="price">$10.00</span></div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=400&auto=format&fit=crop" alt="Producto 3"/>
+          <div class="product-info"><h3>Kirby Set</h3><span class="price">$10.00</span></div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&auto=format&fit=crop" alt="Producto 4"/>
+          <div class="product-info"><h3>Pixel Art</h3><span class="price">$10.00</span></div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?w=400&auto=format&fit=crop" alt="Producto 5"/>
+          <div class="product-info"><h3>Mini Link</h3><span class="price">$10.00</span></div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=400&auto=format&fit=crop" alt="Producto 6"/>
+          <div class="product-info"><h3>Unicornio</h3><span class="price">$10.00</span></div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?w=400&auto=format&fit=crop" alt="Producto 7"/>
+          <div class="product-info"><h3>I Love You</h3><span class="price">$10.00</span></div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1608731267464-c0c889c2ff92?w=400&auto=format&fit=crop" alt="Producto 8"/>
+          <div class="product-info"><h3>Pokéball</h3><span class="price">$10.00</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-placeholder">PX</div>
+        <span>Arte pixel a pixel</span>
+      </div>
+      <div class="footer-map">
+        <h4>MAPA DE SITIO</h4>
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Todos los derechos reservados.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Aviso de privacidad</a>
+        <a href="#">Términos de uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

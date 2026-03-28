@@ -1,0 +1,24 @@
+@font-face {
+    font-family: jost;
+    src: url(../fonts/Jost-Black.ttf);
+}
+
+@font-face {
+    font-family: arcade;
+    src: url(../fonts/ArcadePixel-Regular.ttf);
+}
+
+:root {
+    --fondo_oscuro: #214053;
+    --gris: #f3f2ed;
+    --fondo_claro: #84b0bb;
+    --fondo_verde: #9abf9f;
+    --fondo_medio: #48788c;
+    --negro: #000000;
+    --jostBlack: jost;
+    --arcade: arcade;
+}
+
+* {
+    font-family: var(--jostBlack);
+}

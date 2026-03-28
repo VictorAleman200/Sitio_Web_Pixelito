@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #000000;
+    background-color: var(--gris);
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+.seccion {
+    color: var(--negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*place-content: center;*/
+    width: 280px;
+    height: 40px;
+    font-family: var(--arcade);
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.active {
+    width: 280px;
+    height: 60px;
+    background-color: var(--azul_oscuro);
+    color: var(--blanco);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+div a img {
+    width: 60px;
+    height: 100%;
+}
+
+div a[title="cuenta"] {
+    margin-right: 25px;
+    text-decoration: none;
+    background-color: var(--azul_claro);
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+}
+
+div a[title="cuenta"]:hover {
+    background-color: var(--azul_medio);
+}
+
+div a[title="shop"] {
+    margin-right: 25px;
+    text-decoration: none;
+    background-color: var(--azul_claro);
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+div a[title="shop"]:hover {
+    background-color: var(--azul_medio);
+}
+
+div a[title="shop"] img {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
